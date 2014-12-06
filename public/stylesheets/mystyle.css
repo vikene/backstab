@@ -60,6 +60,11 @@
                     left: 30px;
             
             }
+.login_form #signup
+{
+        position: relative;
+        padding: 10px;
+}
 
             .navbar{
                 position: relative;

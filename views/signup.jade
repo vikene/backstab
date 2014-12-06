@@ -20,11 +20,14 @@ html(lang=en)
                     li About
                     li Home
             .login_bold
-                | Login to Continue
+                | Signup
                 
         .login_form
-            form(method="post",action="/checkuser")
-            
+            form(method="post",action="/adduser")
+                | Name                    
+                input(id="name",type='text',placeholder="jim, harry",name="name")
+                br 
+                br
                 | Email 
                 input(id="email",type='text',placeholder="someone@email.com",name="email")
                 br
@@ -33,7 +36,10 @@ html(lang=en)
                 input(id="pass",type='password',placeholder="password",name="password")
                 br
                 br
-                a(id="signup",href="/signup")
-                    | Do not have an account ? signup now. Its free!
-                input(type="submit",class="reg_but",value="login")
+                | Confirm Password 
+                input(id="confpass",type='password',placeholder="password",name="conf_password")
+                br
+                br
+                input(type="submit",class="reg_but",value="Signup")
                 
+    
