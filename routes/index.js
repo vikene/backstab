@@ -3,7 +3,7 @@ var router = express.Router()
 
 router.get('/',function(req,res){
 
-    res.send("Router working !")
+    res.render('index',{title:'Reserve my place',data:'dude'})
 
 })
 

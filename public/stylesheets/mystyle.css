@@ -1,0 +1,192 @@
+.header{
+                background: #be1f2e;
+                height: 512px;
+                top:-50px;
+                position: relative;
+                
+            }
+            .navbar{
+                position: relative;
+                top:60px;
+                left:-90px;
+            }
+            .navbar ul{
+                
+                position: relative;
+                list-style-type: none;
+               
+            }
+            .navbar li{
+            
+                float:right;
+                padding: 10px;
+                font-size: 20px;
+                color:white;
+                font-family: cursive;
+            }
+            .quote {
+                position: relative;
+                top:180px;
+                
+                font-size: 40px;
+                color:#dfdfdf;
+                float:right;
+                left:-50px;
+            }
+            .image{
+                position: relative;
+                float: right;
+                top: 80px;
+                left: -80px;
+                
+            
+            }
+            .code{
+                
+                font-family: monospace ;
+                font-size: 100px;
+                color: #be1f2e;
+                font-stretch: expanded;
+            }
+             .coded{
+                
+                font-family: monospace ;
+                font-size: 100px;
+                color: #be1f2e;
+                font-stretch: expanded;
+                 position: relative;
+                 top:720px;
+             }
+            .intro_text{
+            
+                    font-family: monospace;
+                    font-size: 40px;
+                color:#be1f2e;
+                width:1000px;
+                float:right;
+                position: relative;
+                
+            }
+            
+            .projects{
+                
+                position: relative;
+                top:30px;
+            }
+            
+            .app{
+                width: 400px;
+                height: 200px;
+                background: #ea1cb3;
+            }
+            .windowsphone{
+                 width: 400px;
+                height: 200px;
+                background: #ea1cb3;
+                position: relative;
+                float: left;
+                left:20px;
+                top:30px;
+                
+            }
+                .nokiaasha{
+                
+                 width: 400px;
+                height: 200px;
+                background: #aeb1cf;
+                    position: relative;
+                    float:left;
+                     left:70px;
+                    top:30px;
+                }
+                .webapps{
+                     width: 400px;
+                height: 200px;
+                background: #ea1cb3;
+                     position: relative;
+                float: right;
+                    right:20px;
+                    top:30px;
+                }
+                .python{
+                
+                     width: 400px;
+                height: 200px;
+                background: grey;
+                      position: relative;
+                float: left;
+                    left:20px;
+                    top:60px;
+                }
+                .windows{
+                
+                     width: 400px;
+                height: 200px;
+                background: #ea1cb3;
+                     position: relative;
+                float: left;
+                    left:70px;
+                    top:60px;
+                
+                }
+                .os{
+                
+                     width: 400px;
+                height: 200px;
+                background: green;
+                     position: relative;
+                float: right;
+                    right: 20px;
+                    top:60px;
+                }
+                .java{
+                 width: 400px;
+                height: 200px;
+                background: #ea1cb3;
+                     position: relative;
+                float: left;
+                    left:200px;
+                    top:90px;
+                
+                }
+                .node{
+                
+                     width: 400px;
+                height: 200px;
+                background: #ea1cb3;
+                     position: relative;
+                float: right;
+                    right: 200px;
+                    top:90px;                    
+                    
+                }
+            .align{
+                
+                position: relative;
+            
+            }
+            
+            .footer{
+            
+              
+                height: 350px;
+                background: #be1f2e;
+                position: relative;
+                top:780px;
+                color:white;
+                font-family: monospace;
+                
+            }
+            
+            .contact ul{
+            
+            list-style-type: none;
+                
+            }
+            .contact{
+                
+            
+                position: relative;
+                top:50px;
+                left:-700px;
+            font-size: 30px;}
