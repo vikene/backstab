@@ -5,6 +5,62 @@
                 position: relative;
                 
             }
+.header_login{
+                background: #be1f2e;
+                height: 250px;
+                top:-50px;
+                position: relative;
+                
+            }
+            
+            .login_bold{
+                
+                color:white;
+                font-size: 35px;
+                position: relative;
+                z-index: 2;
+                top:200px;
+                left:100px;
+            
+            }
+
+            .login_form{
+                
+                position: relative;
+                left: 500px;
+                font-family: 'Alef',sans-serif;
+             
+            }
+            
+            .login_form input{
+                padding: 20px;
+            
+            }
+            .login_form #name{
+            
+                    position: relative;
+                    left: 120px;
+            
+            }
+ .login_form #email{
+            
+                    position: relative;
+                    left: 120px;
+            
+            }
+ .login_form #pass{
+            
+                    position: relative;
+                    left: 90px;
+            
+            }
+ .login_form #confpass{
+            
+                    position: relative;
+                    left: 30px;
+            
+            }
+
             .navbar{
                 position: relative;
                 top:60px;
@@ -56,6 +112,26 @@
             }
 
             .reg_but:hover{
+            
+                background: #2672A0;
+                cursor: pointer;
+                box-shadow: 0px 0px 1px #aaa;
+            
+            }
+            .reg_but_header{
+                
+                background: #2672EC;
+                width: 150px;
+                height: 60px;
+                color:white;
+                border: 1px solid #2672EC;
+                font-family: sans-serif;
+                font-size: 20px;
+                margin: auto;
+                
+            }
+
+            .reg_but_header:hover{
             
                 background: #2672A0;
                 cursor: pointer;
@@ -193,7 +269,7 @@
                 height: 350px;
                 background: #be1f2e;
                 position: relative;
-                top:780px;
+               top:250px;
                 color:white;
                 font-family: monospace;
                 
@@ -202,6 +278,12 @@
             .contact ul{
             
             list-style-type: none;
+                
+            }
+                
+            .techno{
+                
+                font-size: 20px;
                 
             }
             .contact{

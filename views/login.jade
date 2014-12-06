@@ -1,0 +1,42 @@
+doctype html
+html(lang=en)
+    head
+        title=title
+        script(src='/bower_components/jquery/dist/jquery.min.js')
+        script(src='/bower_components/angularjs/angular.js')
+        link(rel='stylesheet',href='/stylesheets/mystyle.css')
+       
+        link(rel='stylesheet',href='http://fonts.googleapis.com/css?family=Alef',type='text/css')
+       
+    
+    body
+        .header_login
+        
+            .navbar
+                ul
+                  
+                    li Contact
+                    li Reserve
+                    li About
+                    li Home
+            .login_bold
+                | Login to Continue
+                
+        .login_form
+            form(method="post",action="/checkuser")
+                | Name                    
+                input(id="name",type='text',placeholder="jim, harry",name="name")
+                br 
+                br
+                | Email 
+                input(id="email",type='text',placeholder="someone@email.com",name="email")
+                br
+                br
+                | Password 
+                input(id="pass",type='password',placeholder="password",name="password")
+                br
+                br
+                | Confirm Password 
+                input(id="confpass",type='password',placeholder="password",name="conf_password")
+                
+    
