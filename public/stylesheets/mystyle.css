@@ -41,6 +41,27 @@
                 
             
             }
+            
+            .reg_but{
+                
+                background: #2672EC;
+                width: 100px;
+                height: 60px;
+                color:white;
+                border: 1px solid #2672EC;
+                font-family: sans-serif;
+                font-size: 20px;
+                margin: auto;
+                
+            }
+
+            .reg_but:hover{
+            
+                background: #2672A0;
+                cursor: pointer;
+                box-shadow: 0px 0px 1px #aaa;
+            
+            }
             .code{
                 
                 font-family: monospace ;
