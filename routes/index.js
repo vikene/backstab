@@ -92,7 +92,7 @@ router.get('/blog',function(req,res){
 
 router.get('/post_blog',function(req,res){
 
-    res.sendFile("/backstab/public/post_static.html")
+    res.send(__dirname)
 
 })
 router.post('/post_blog', function(req,res){
