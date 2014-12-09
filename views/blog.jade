@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+    head
+        title= title
+        script(src='/bower_components/jquery/dist/jquery.min.js')
+        script(src='/bower_components/angularjs/angular.js')
+        link(rel='stylesheet',href='/stylesheets/mystyle.css')
+        
+    
+    body
+         each blog, i in bloglist
+            h1 #{blog.authorname}
+            
+            p #{blog.blog}
+            
+            p #{blog.date}
+      
+
+                
+            

@@ -4,7 +4,8 @@ var router = express.Router()
 router.get('/',function(req,res){
 
     res.render('index',{title:'Reserve my place',data:'dude'})
-
+    
+    
 })
 
 router.get('/login',function(req,res){
@@ -19,13 +20,22 @@ router.post('/checkuser',function(req,res){
     collection.findOne({"email":req.body.email},function(err,doc){
         
            if(doc != null)
-            res.send("Welcome, "+doc.name);
+           {res.send("Welcome, "+doc.name);
+            
+            
+           }
         else
-            res.redirect('/signup')
+        {res.redirect('/signup')}
             
     
     })
     
+   
+
+})
+
+router.get('/user',function(req,res){
+
    
 
 })
@@ -47,6 +57,65 @@ router.post('/adduser',function(req,res){
         collection.insert(data);
     console.log('Hey inserted!');
         res.redirect('/');
+
+})
+
+router.get('/logout',function(req,res){
+
+        session = null;
+    console.log("session destroyed");
+})
+
+router.get('/blog',function(req,res){
+    
+    var db = req.db;
+    var collection = db.get('blog');
+    console.log('i have a connection!');
+    collection.find({},function(errr,doc)
+                    {
+        
+           
+                
+                var buffer = new Array(doc.length);
+        var j=0;
+                for(var i=doc.length-1;i>=0;i--)
+                {
+                    buffer[j] = doc[i];
+                    j++;
+                }
+        res.render('blog',{"bloglist":buffer});
+    })
+
+    
+
+})
+
+router.get('/post_blog',function(req,res){
+
+    res.sendFile("/backstab/public/post_static.html")
+
+})
+router.post('/post_blog', function(req,res){
+
+        var authorname = req.body.authorname;
+        var blog = req.body.blog;
+        var datee = new Date();
+        var month = datee.getMonth()+1;
+    var day = datee.getDate();
+    var year = datee.getFullYear();
+    var date_formated = month+"/"+day+"/"+year
+        var data = {
+        "authorname":authorname,
+            "blog":blog,
+            "date":date_formated
+            
+        
+        }
+        var db = req.db;
+    var collection = db.get('blog')
+    collection.insert(data);
+    
+        res.redirect('/blog');
 
 })
 

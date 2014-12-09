@@ -10,7 +10,7 @@
 7 verbose unsafe-perm in lifecycle true
 8 info backstab@0.0.1-v Failed to exec start script
 9 error backstab@0.0.1-v start: `node app.js`
-9 error Exit status 8
+9 error Exit status 3
 10 error Failed at the backstab@0.0.1-v start script.
 10 error This is most likely a problem with the backstab package,
 10 error not with npm itself.

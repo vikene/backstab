@@ -2,6 +2,7 @@ var express = require('express');
  var stylus = require('stylus')
   var nib = require('nib')
 
+
 var bodyParser = require('body-parser');
 var mongo = require('mongodb');
 var monk = require('monk');
@@ -30,12 +31,16 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+
 app.use(function(req,res,next){
 
         req.db= db;
     next();
 
 });
+
+
+
 
 //routers!!
 app.use('/',routes);
