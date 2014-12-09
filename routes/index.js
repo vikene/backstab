@@ -92,7 +92,7 @@ router.get('/blog',function(req,res){
 
 router.get('/post_blog',function(req,res){
 
-    res.send(__dirname)
+    res.sendFile('/app/public/post_static.html')
 
 })
 router.post('/post_blog', function(req,res){
